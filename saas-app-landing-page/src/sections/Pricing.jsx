@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import {Element} from 'react-scroll'
 import { plans } from '../constants'
 import CountUp from 'react-countup'
+import Button from '../components/Button'
 
 const Pricing = () => {
   const [monthly, setMonthly]= useState(false)
@@ -46,7 +47,7 @@ const Pricing = () => {
 
                 <div
                 className={clsx('absolute left-0 right-0 z-2 flex items-center justify-center',
-              index === 1 ? "-top-6":"-top6 xl:-top-11")}
+              index === 1 ? "-top-6":"-top-6 xl:-top-11")}
                 >
                   <img
                   src={plan.logo}
@@ -82,17 +83,31 @@ const Pricing = () => {
                       {plan.caption}
                 </div>
 
-                <ul>
-                  {plan.features.map(()=>(
-                    <li>
+                <ul className='mx-auto space-y-4 xl:px-7' >
+                  {plan.features.map((feature)=>(
+                    <li
+                    className='relative flex items-center gap-5'
+                    key={feature}>
                     <img src={"/images/check.png"} 
                     alt="check"
                     className='size-10 obejct-contain'
                     />
+                    <p className='flex-1'>{feature}</p>
                     </li>
                   ))}
-                  
                 </ul>
+                <div className='mt-10 flex w-full justify-center'>
+                  <Button
+                  icon={plan.icon}>
+                    Get Started
+                  </Button>
+                </div>
+
+                {index ===1 && 
+                <p
+                className="small-compact mt-9 text-center text-p3 before:content-['-'] before:mx-2.5 after:mx-2.5 after:content-['-']" >
+                  Limited Time Offer
+                </p>}
               </div>
             ))}
           </div>

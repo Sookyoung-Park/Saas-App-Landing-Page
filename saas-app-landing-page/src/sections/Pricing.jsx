@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import React, {useState} from 'react'
 import {Element} from 'react-scroll'
 import { plans } from '../constants'
+import CountUp from 'react-countup'
 
 const Pricing = () => {
   const [monthly, setMonthly]= useState(false)
@@ -38,9 +39,43 @@ const Pricing = () => {
             {plans.map((plan, index)=>(
               <div 
               key={plan.id}
-              className="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 p-7 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%+2px)]"
-              >
-                {plan.title}
+              className="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 p-7 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%+2px)]">
+                {index===1 &&
+                  (<div className='g4 absolute h-330 top-0 left-0 right-0 z-1 rounded-tl-3xl rounded-tr-3xl'/>
+                )}
+
+                <div
+                className={clsx('absolute left-0 right-0 z-2 flex items-center justify-center',
+              index === 1 ? "-top-6":"-top6 xl:-top-11")}
+                >
+                  <img
+                  src={plan.logo}
+                  alt={plan.title}
+                  className={clsx('object-contain drop-shadow-2xl', index ===1 ? "size-[120px]":"size-[88px]")}
+                  />
+                  
+                </div>
+
+                <div className={clsx('realtive flex flex-col items-center', index ===1 ? 'pt-24':'pt-12')}>
+                  <div className={clsx('small-2 rounded-20 border-2 relative z-2 px-4 py-1.5 mx-auto mb-6 uppercase',
+                  index === 1 ? 'border-p3 text-p3':'border-p1 text-p1')}>
+                    {plan.title}
+                  </div>
+
+                  <div className='relative z-2 items-center justify-center'>
+                    <div className={clsx("h-num flex items-start",index === 1 ? 'text-p3' : 'text-p4')}>
+                      $ <CountUp
+                      start={plan.priceMonthly}
+                      end={monthly ? plan.priceMonthly : plan.priceYearly}
+                      duration={0.4}
+                      useEasing={false}
+                      preserveValue
+                      />
+                    </div>
+                  </div>
+                </div>                
+                
+
               </div>
             ))}
           </div>

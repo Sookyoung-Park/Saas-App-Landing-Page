@@ -36,7 +36,7 @@ const Pricing = () => {
             </div>
           </div>
           {/* pricing section */}
-          <div className='scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6"'>
+          <div className='scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6'>
             {plans.map((plan, index)=>(
               <div 
               key={plan.id}

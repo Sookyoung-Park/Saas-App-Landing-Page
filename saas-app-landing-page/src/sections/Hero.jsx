@@ -30,7 +30,7 @@ const Hero = () => {
           <img 
           src="/images/hero-1.png" 
           alt="hero"
-          className='absolute -top-4 left-[calc(42%)] w-[900px] pointer-events-none hero-img_res'
+          className='absolute -top-4 left-[calc(42%)] w-[900px] pointer-events-none hero-img_res max-md:hidden'
           />
         </div>
 

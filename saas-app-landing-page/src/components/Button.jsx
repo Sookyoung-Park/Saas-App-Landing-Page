@@ -8,7 +8,7 @@ const Button = ({icon, children, href, containerClassName, onClick, markerFill})
         <>
         <span className='relative flex items-center min-h-[60px] px-4 g4 rounded-2xl inner-before group-hover:before:opacity-100 overflow-hidden'>
                 <span className='absolute -left-[1px]'>
-                    <Marker markerFill={markerFill} />
+                    {/* <Marker markerFill={markerFill} /> */}
                 </span>
                 {icon && (
                     <img 
@@ -18,7 +18,7 @@ const Button = ({icon, children, href, containerClassName, onClick, markerFill})
                     />
                 )}
                 <span
-                className='relative z-2 font-poppins base-bold text-p1 uppercase'>
+                className='relative z-2 font-poppins base-bold text-p4 uppercase'>
                     {children}
                 </span>
             </span>

@@ -23,8 +23,8 @@ const FaqItem = ({ item, index }) => {
             </div>
             <div
                 className={clsx(
-                "h6 text-p4 transition-colors duration-500 max-md:flex max-md:min-h-20 max-md:items-center",
-                active && "max-lg:text-p1",
+                "h6 text-p7 transition-colors duration-500 max-md:flex max-md:min-h-20 max-md:items-center",
+                active && "lg:text-p4 max-md:text-p4 xl:text-p4",
                 )}
             >
                 {item.question}
@@ -33,11 +33,11 @@ const FaqItem = ({ item, index }) => {
 
             <div
             className={clsx(
-                "faq-icon relative flex size-12 items-center justify-center rounded-full border-2 border-s2 shadow-400 transition-all duration-500 group-hover:border-s4",
-                active && "before:bg-p1 after:rotate-0 after:bg-p1",
+                "faq-icon relative flex size-12 items-center justify-center rounded-full border-2 border-s2/10 shadow-400 transition-all duration-500 group-hover:border-p3",
+                active && "before:bg-p3 after:rotate-0 after:bg-p3",
             )}
             >
-            <div className="g4 size-11/12 rounded-full shadow-300" />
+            <div className="g1 size-11/12 rounded-full shadow-500" />
             </div>
         </div>
 
@@ -54,7 +54,7 @@ const FaqItem = ({ item, index }) => {
             )}
         >
             <div className="g4 absolute inset-0.5 -z-1 rounded-3xl" />
-            <div className="absolute left-8 top-0 h-0.5 w-40 bg-p1" />
+            <div className="absolute left-8 top-0 h-0.5 w-40 bg-p3" />
         </div>
         </div>
     );

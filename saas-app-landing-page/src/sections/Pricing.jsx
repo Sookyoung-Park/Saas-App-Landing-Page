@@ -6,33 +6,34 @@ import CountUp from 'react-countup'
 import Button from '../components/Button'
 
 const Pricing = () => {
-  const [monthly, setMonthly]= useState(false)
+  const [membership, setMembership] = useState(false)
+
   return (
-    <section>
+    <section className='bg-s1 mt-40 pb-40'>
       <Element name="pricing">
-        <div className="container">
-          <div className='max-w-960 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1/50 pb-40 pt-28'>
+        <div className="container ">
+          <div className='max-w-960 pricing-head_before relative mx-auto pb-40 pt-40'>
             <h3 className='h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center max-md:mb-11 max-sm:max-w-sm'>
-              Flexible pricing for teams of all sizes
+              Get a Discount with our membership annually $10!
             </h3>
 
             <div className='relative z-4 mx-auto flex w-[375px] border-[3px] rounded-3xl border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[310px]'>
 
               <button
-              onClick={()=>setMonthly(true)}
-              className={clsx("pricing-head_btn", monthly && "text-p4")}
+              onClick={()=>setMembership(true)}
+              className={clsx("pricing-head_btn", membership && "text-p4")}
               >
-                Monthly
+                Non-Membership
               </button>
               <button
-              onClick={()=>setMonthly(false)}
-              className={clsx("pricing-head_btn", !monthly && "text-p4")}
+              onClick={()=>setMembership(false)}
+              className={clsx("pricing-head_btn", !membership && "text-p4")}
               >
-                Annually
+                Membership
               </button>
 
               {/* animation for sliding button */}
-              <div className={clsx('g4 rounded-14 before:h-100 pricing-head_btn_before absolute left-2 top-2 h-[calc(100%-16px)] w-[calc(50%-8px)] overflow-hidden shadow-400 transition-transform duration-500',!monthly && 'translate-x-full')}/>
+              <div className={clsx('g4 rounded-14 before:h-100 pricing-head_btn_before absolute left-2 top-2 h-[calc(100%-16px)] w-[calc(50%-8px)] overflow-hidden shadow-400 transition-transform duration-500',!membership && 'translate-x-full')}/>
             </div>
           </div>
           {/* pricing section */}
@@ -67,13 +68,13 @@ const Pricing = () => {
                     <div className={clsx("h-num flex items-start",index === 1 ? 'text-p3' : 'text-p4')}>
                       $ <CountUp
                       start={plan.priceMonthly}
-                      end={monthly ? plan.priceMonthly : plan.priceYearly}
+                      end={membership ? plan.priceMonthly : plan.priceYearly}
                       duration={0.4}
                       useEasing={false}
                       preserveValue
                       />
                       <div className='small-1 relative top-3 ml-1 uppercase'>
-                      /month
+                      /page
                     </div>
                     </div>
                     

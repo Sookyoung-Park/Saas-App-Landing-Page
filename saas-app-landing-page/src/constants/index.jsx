@@ -49,13 +49,13 @@ export const features = [
   export const faq = [
     {
       id: '0',
-      question: 'How easy is it to setup Xora?',
+      question: 'How easy is it to setup Design On?',
       answer:
         'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
     },
     {
       id: '1',
-      question: 'Can I integrate Xora with other platforms?',
+      question: 'Can I integrate Design On with other platforms?',
       answer:
         'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
     },
@@ -112,14 +112,14 @@ export const features = [
   export const plans = [
     {
       id: '0',
-      title: 'Core',
-      priceMonthly: 19,
-      priceYearly: 12,
-      caption: 'Best for solo creators',
+      title: 'Design',
+      priceMonthly: 30,
+      priceYearly: 18,
+      caption: 'App / Web Design',
       features: [
-        '100MB Cloud storage',
-        '100+ prompt templates',
-        '5 projects',
+        'Original Design File',
+        'Responsive Design',
+        'Match 1 on 1 Professional',
         '24/7 support',
       ],
       icon: '/images/circle.svg',
@@ -127,30 +127,30 @@ export const features = [
     },
     {
       id: '1',
-      title: 'Overdrive',
-      priceMonthly: 79,
-      priceYearly: 59,
-      caption: 'Most popular plan',
+      title: 'Design & Implemention',
+      priceMonthly: 70,
+      priceYearly: 55,
+      caption: 'Design & Frontend',
       features: [
-        'All Starter features',
-        '1TB additional storage',
-        'Unlimited projects',
-        'Analytics',
+        'Original Design File',
+        'Original Source Code',
+        'Match 1 on 1 Professionals',
+        '24/7 support',
       ],
       icon: '/images/triangle.svg',
       logo: '/images/plan-2.png',
     },
     {
       id: '2',
-      title: 'Team',
-      priceMonthly: 39,
-      priceYearly: 29,
-      caption: 'Exclusively for teams',
+      title: 'Implementation',
+      priceMonthly: 50,
+      priceYearly: 35,
+      caption: 'Frontend Implementation',
       features: [
-        'All Overdrive features',
-        '10TB additional storage',
-        '50% off per member',
-        'Real-time collaboration',
+        'React, HTML/CSS',
+        'Original Design File',
+        'Match 1 on 1 Professionals',
+        '24/7 Support',
       ],
       icon: '/images/hexagon.svg',
       logo: '/images/plan-3.png',
@@ -164,7 +164,7 @@ export const features = [
       role: 'Globalnomads',
       avatarUrl: '/images/testimonials/jessica-saunders.png',
       comment:
-        "Xora's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
+        "Design On's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
     },
     {
       id: '1',
@@ -196,7 +196,7 @@ export const features = [
       role: 'Floclips',
       avatarUrl: '/images/testimonials/becky-snider.png',
       comment:
-        "Switched to Xora last month, and I'm already seeing results. Best decision for our team!",
+        "Switched to Design On last month, and I'm already seeing results. Best decision for our team!",
     },
     {
       id: '5',

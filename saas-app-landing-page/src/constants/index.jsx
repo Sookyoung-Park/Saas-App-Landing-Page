@@ -2,23 +2,23 @@ export const features = [
     {
       id: '0',
       icon: '/images/feature-1.png',
-      caption: 'Easy integration',
-      title: 'Work smarter not harder',
-      text: "With Xora, tedious tasks are history. Automation and smart processes bring your productivity to new heights. It's like having an extra cup of coffee, but without the jitters.",
+      caption: 'Professional Design Process',
+      title: 'Design smarter not harder',
+      text: "Exceptional design starts with understanding. We dive deep into user insights to create interfaces that are not only visually stunning but also intuitive and user-centered.",
       button: {
         icon: '/images/magictouch.svg',
-        title: 'Watch the demo',
+        title: 'View Design Service',
       },
     },
     {
       id: '1',
       icon: '/images/feature-2.png',
-      caption: 'Secure & trustworthy',
+      caption: 'Flowless & Seamless Performance',
       title: 'Sleep easy, we got your back',
-      text: 'Your data security is our priority. With state-of-the-art encryption and robust privacy controls, Xora helps keeps your information secure and locked up tighter than Fort Knox.',
+      text: 'Our development team builds responsive, fast, and scalable digital experiences. We ensure that your site or app performs flawlessly across all devices, with a focus on robust functionality and seamless user experience.',
       button: {
         icon: '/images/docs.svg',
-        title: 'Read the docs',
+        title: 'View Development Service',
       },
     },
   ];
@@ -27,12 +27,12 @@ export const features = [
     {
       id: '0',
       icon: '/images/detail-1.png',
-      title: 'AI automated video editing',
+      title: 'AI Automated Design Tool',
     },
     {
       id: '1',
       icon: '/images/detail-2.png',
-      title: 'Collaborate with your team',
+      title: 'Collaborate With Your Team',
     },
     {
       id: '2',

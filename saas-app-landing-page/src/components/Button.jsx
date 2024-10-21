@@ -35,7 +35,7 @@ const Button = ({icon, children, href, containerClassName, onClick, markerFill})
         </a>
     ) : (
         <button
-        className={clsx("relative p-0.5 g5 rounded-2xl shadow-500 group",containerClassName)}
+        className={clsx("relative p-0.5 g5 rounded-2xl shadow-400 group",containerClassName)}
         onClick={onClick}
         >
             <Inner/>

@@ -1,3 +1,5 @@
+import { M } from 'vite/dist/node/types.d-aGj9QkWt';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -7,9 +9,12 @@ export default {
         // primary colors - p
         p1: '#2EF2FF',
         p2: '#3C52D9',
-        p3: '#C8EA80',
+        //caption
+        p3: '#29A2FC',
         p4: '#EAEDFF',
         p5: '#C4CBF5',
+        p6: '#8E8E8E',
+        p7: '#424242',
         // secondary colors - s
         s1: '#080D27',
         s2: '#0C1838',
@@ -26,7 +31,7 @@ export default {
         200: '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 4px 10px #3391FF',
         300: '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD',
         400: 'inset 0px 2px 4px 0 rgba(255, 255, 255, 0.05)',
-        500: '0px 16px 24px rgba(0, 0, 0, 0.25), 0px -14px 48px rgba(40, 51, 111, 0.7)',
+        500: '0px 16px 24px rgba(0, 0, 0, 0.14), 0px -14px 48px rgba(40, 51, 111, 0.3)',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

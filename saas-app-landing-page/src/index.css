@@ -6,7 +6,7 @@
 
 @layer base {
   html {
-    @apply bg-s1;
+    /* @apply bg-s1; */
   }
 
   body {
@@ -41,7 +41,7 @@
   }
 
   .h2 {
-    @apply text-[64px] font-black leading-[64px];
+    @apply text-[64px] font-black leading-[72px];
   }
 
   .h3 {
@@ -61,7 +61,7 @@
   }
 
   .body-1 {
-    @apply text-[22px] leading-[36px];
+    @apply text-[20px] leading-[36px];
   }
 
   .body-2 {
@@ -99,7 +99,7 @@
   /* END of Typography */
   /* START of Gradients */
   .g1 {
-    background: linear-gradient(rgba(196, 203, 245, 0.5), transparent);
+    background: linear-gradient(rgba(196, 203, 245, 0.15), transparent);
   }
 
   .g2 {

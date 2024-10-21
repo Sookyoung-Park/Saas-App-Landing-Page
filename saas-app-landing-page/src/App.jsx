@@ -19,7 +19,6 @@ const App = () => {
       <Testimonials /> 
       <Download />
       <Footer />
-
     </main>
   )
 }

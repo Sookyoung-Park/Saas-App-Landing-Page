@@ -15,8 +15,8 @@ const Download = () => {
                 <div className="mb-10">
                     <img
                     src="/images/xora.svg"
-                    width={160}
-                    height={55}
+                    width={72}
+                    height={72}
                     alt="xora"
                     />
                 </div>

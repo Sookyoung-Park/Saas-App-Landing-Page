@@ -26,7 +26,7 @@ const Header = () => {
       spy
       smooth
       activeClass="nav-active"
-      className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+      className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p2 max-lg:my-4 max-lg:h5"
     >
       {title}
     </LinkScroll>
@@ -71,7 +71,7 @@ const Header = () => {
                   >
                     <img
                       src="/images/xora.svg"
-                      width={160}
+                      width={55}
                       height={55}
                       alt="logo"
                     />

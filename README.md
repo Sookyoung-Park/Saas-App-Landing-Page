@@ -1,4 +1,4 @@
-<!-- ![LandingPage](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_landingPage.gif?raw=true) -->
+![LandingPage](https://github.com/Sookyoung-Park/Saas-App-Landing-Page/blob/main/saas-app-landing-page/public/images/moneyshot.png?raw=true)
 
 <div>
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=000000" alt="react.js" />

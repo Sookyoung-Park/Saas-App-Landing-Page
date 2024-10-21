@@ -52,5 +52,6 @@ npm run dev
 
 
 ## **Screenshots**
-<!-- ![Screenshot1](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_page2.gif?raw=true)
-![Screenshot2](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_page3.gif?raw=true) -->
+![Screenshot1](https://github.com/Sookyoung-Park/Saas-App-Landing-Page/blob/main/saas-app-landing-page/public/images/micro-animation-1.gif?raw=true)
+![Screenshot2](https://github.com/Sookyoung-Park/Saas-App-Landing-Page/blob/main/saas-app-landing-page/public/images/micro-animation-2.gif?raw=true)
+![Screenshot3](https://github.com/Sookyoung-Park/Saas-App-Landing-Page/blob/main/saas-app-landing-page/public/images/micro-animation-3.gif?raw=true)
